@@ -7,9 +7,11 @@
 \BOOKMARK [2][-]{subsection.1.3.2}{Configurazione}{section.1.3}% 7
 \BOOKMARK [1][-]{section.1.4}{Schermate dell'applicazione}{chapter.1}% 8
 \BOOKMARK [0][-]{chapter.2}{Architetture}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Layered architecture}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Ports and adapters}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{Architettura del software}{section.2.2}% 12
-\BOOKMARK [0][-]{chapter.3}{Tecnologie}{}% 13
-\BOOKMARK [1][-]{subsection.3.0.1}{UI}{chapter.3}% 14
-\BOOKMARK [0][-]{subsection.3.0.1}{Bibliografia}{}% 15
+\BOOKMARK [1][-]{section.2.1}{Introduzione}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Architettura a livelli}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Ports and adapters}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Logica di dominio}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.4.1}{Architettura del software}{section.2.4}% 14
+\BOOKMARK [0][-]{chapter.3}{Tecnologie}{}% 15
+\BOOKMARK [1][-]{subsection.3.0.1}{UI}{chapter.3}% 16
+\BOOKMARK [0][-]{subsection.3.0.1}{Bibliografia}{}% 17
