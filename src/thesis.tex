@@ -1,0 +1,96 @@
+\documentclass[a4paper,oneside]{Tptesi2}
+
+\usepackage[italian]{babel}
+\usepackage{listings}
+\usepackage{amsmath,amssymb}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+%\usepackage{subfigure}
+\usepackage{algorithmic} 
+\usepackage{framed}
+\usepackage{rotating}
+\usepackage[superscript]{cite}
+\usepackage{subfig}
+
+% Packages -----------------------------------------------------------------------
+\renewcommand\citeform[1]{[#1]}
+
+
+% Use a small font for the verbatim environment
+\makeatletter  % makes '@' an ordinary character
+\renewcommand{\verbatim@font}{%
+  \ttfamily\footnotesize\catcode`\<=\active\catcode`\>=\active%
+}
+\makeatother   % makes '@' a special symbol again
+%
+% Simboli Matematici -------------------------------------------------------------
+%\newcommand{\h}{\mathcal{H}_\infty} % scorciatoia per sequenza usata spesso
+% Definizioni & Teoremi ----------------------------------------------------------
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{corollario}[teorema]{Corollario} 
+\newtheorem{lemma}[teorema]{Lemma}
+%\theoremstyle{definition}
+\newtheorem{definizione}{Definizione}[chapter]
+\newtheorem{proposizione}[definizione]{Proposizione}
+% Formattazione Figure -----------------------------------------------------------
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{3}
+\def\topfraction{1}
+\def\textfraction{0}
+% Fuzz ---------------------------------------------------------------------------
+%\hfuzz10cm %Non scassare linee che escono dal bordo
+% Frontespizio -------------------------------------------------------------------
+       \title{Title...}
+       \author{Lorenzo Niccolai}
+       \titolocorso{Ingegneria Informatica}
+       \chair{Prof. Enrico Vicario \\ }
+       \numberofmembers{1} %numero dei relatori
+       \degreeyear{2019/2020}
+       \numerocorrelatori{1} %numero dei correlatori
+       \correlatori{???} % i correlatori separati da \\
+
+\hypersetup{%
+%  pdfpagemode=FullScreen,%
+  plainpages=false,%
+  breaklinks,%
+  pdftitle={},%
+  pdfauthor={},%
+  pdfsubject={},%
+  pdfkeywords={},%
+  colorlinks=false}
+
+\begin{document}
+
+\frontmatter
+
+\pagestyle{headings}
+
+\maketitle
+
+\tableofcontents
+
+\cleardoublepage
+
+
+%\pagenumbering{arabic}
+%\input{files/ringraziamenti}
+\frontmatter
+\include{files/introduction}
+
+\mainmatter
+\include{files/application}
+\include{files/architecture}
+\include{files/technologies}
+%\include{files/microservices}
+%\include{files/docker}
+%\include{files/cloud_services}
+%\include{files/conclusions}
+
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliographystyle{plain}
+\bibliography{files/biblio}
+%\bibliographystyle{unsrt}
+%\bibliography{sp,xml}
+
+\end{document}

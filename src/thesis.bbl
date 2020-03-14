@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{ddd}
+Eric Evans.
+\newblock {\em Domain-Driven Design}.
+\newblock Addison-Wesley Professional, 2003.
+
+\bibitem{react}
+Facebook.
+\newblock React.
+
+\bibitem{enterprise_app}
+Martin Fowler.
+\newblock {\em Patterns of Enterprise Application Architecture}.
+\newblock Addison-Wesley Professional, 2002.
+
+\bibitem{material_design}
+Google.
+\newblock Material design.
+
+\bibitem{material_ui}
+Material-UI.
+\newblock Material-ui.
+
+\bibitem{microservices_architecture}
+Irakli Nadareishvili.
+\newblock {\em Microservice Architecture}.
+\newblock O'Reilly, 2016.
+
+\bibitem{data_structures}
+Roberto~Grossi Pierluigi~Crescenzi, Giorgio~Gambosi.
+\newblock {\em Strutture di dati e algoritmi}.
+\newblock Pearson, 2006.
+
+\end{thebibliography}
