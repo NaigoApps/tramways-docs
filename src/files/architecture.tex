@@ -27,12 +27,9 @@ In questa visione il livello di business logic è consapevole dei livelli sottos
 Dovendo gestire più ad alto livello la logica di dominio, per esempio aprendo e chiudendo una transazione, anche il livello application necessita di interagire con lo strato di infrastruttura.
 
 Le linee guida per realizzare un'applicazione seguendo questa architettura prevedono di partizionare il codice in livelli coesi e dipendenti solamente da quelli sottostanti.
-Gli oggetti del modello di dominio devono essere indipendenti dalle varie rappresentazioni, che siano destinate ad UI, persistenza o altro, in modo da essere concentrati sul rappresentare efficacemente quello per cui sono stati pensati.\\
-La separazione in layers permette inoltre di poter effettuare il rilascio delle varie parti dell'applicazione su macchine differenti, favorendone l'evoluzione e la scalabilità.
 
 Esistono varie versioni di questa architettura, in cui i livelli di contorno variano: una di queste è la \textit{three layered architecture} (vedi figura \ref{fig:layered-architecture}), che prevede i livelli di \textit{Presentation} per la gestione della UI, \textit{Business Logic} per la logica di dominio e \textit{Persistence} per dialogare con i database.
 Questi sono sufficienti per gran parte della applicazioni enterprise, in particolare se l'approccio usato è quello del monolite o del monolite a servizi.\\
-
 
 \begin{figure}[h]
 	\centering
@@ -41,21 +38,39 @@ Questi sono sufficienti per gran parte della applicazioni enterprise, in partico
 	\label{fig:layered-architecture}
 \end{figure}
 
+Ogni livello può avere più istanze o essere ulteriormente separato, per esempio quando vi sono più interfacce grafiche verso la stessa applicazione, o più database che forniscono il servizio di persistenza.\\
+Gli oggetti del modello di dominio devono essere, come già affermato, indipendenti dalle varie rappresentazioni, siano queste destinate ad UI, persistenza o altro.
+Un indice di cattiva separazione delle responsabilità può essere per esempio la necessità di duplicare codice, o di modificare la logica di dominio quando si aggiunge una nuova interfaccia all'applicazione.\\
+La separazione in layers permette inoltre di poter effettuare il rilascio delle varie parti dell'applicazione su macchine differenti, favorendone l'evoluzione e la scalabilità.
 \section{Ports and adapters}
 
 Una delle alternative all'architettura organizzata a \textit{layers} è l'architettura chiamata \textit{ports and adapters} o \textit{hexagonal architecture}\cite{microservices_architecture}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{img/hexagonal}
-	\caption{Modulo ad architettura ports and adapters}
-	\label{fig:hexagonal}
+	\includegraphics[scale=0.5]{img/hexagonal-component-diagram}
+	\caption{Architettura ports and adapters}
+	\label{fig:hexagonal-architecture}
 \end{figure}
 
-Anche in questo caso si cerca di rendere il più possibile indipendente il nucleo di un'applicazione dalle tecnologie di contorno, come database, sistema di scambio messaggi ecc...
+Questo modo di organizzare i componenti del sistema è focalizzato sull'isolamento della logica di dominio.\\
 Le comunicazioni di input/output con l'esterno sono guidate da interfacce \textbf{definite dal nucleo} e chiamate \textit{porte}: queste possono essere di tipo \textit{inbound} quando un modulo esterno ha necessità di invocare la logica di dominio, o di tipo \textit{outbound} quando il nucleo ha la necessità di invocare servizi esterni.
+Ogni porta può avere più \textit{adattatori} associati, elementi che servono per collegare realmente i componenti esterni al nucleo.
+La logica di dominio implementa le porte di tipo \textit{inbound}, che saranno usate dagli adattatori in ingresso per richiedere servizi all'applicativo.
+Gli adattatori in uscita implementano le porte di tipo \textit{outbound}.
 
-Ogni porta è implementata da uno o più adattatori (\textit{adapters}) a seconda delle esigenze: per esempio una \textit{outbound port} per l'accesso ad un repository di dati può essere concretizzata sia da un adattatore legato ad un DBMS che da uno dedicato al testing.
+Partendo da un sistema costruito a livelli è possibile derivare l'equivalente in architettura esagonale considerando i seguenti fatti:
+\begin{itemize}
+	\item Se il client di un'applicazione a livelli è un'altro software, il livello di presentazione del primo può essere molto legato al livello di persistenza del secondo: ciò che è esterno alla logica di dominio quindi puòò essere visto semplicemente come un'interfaccia esterna
+	\item In un'architettura a livelli moderna difficilmente la progettazione inizia dal livello di persistenza: spesso questo è realizzato da classi DAO (Data Access Object) che implementano un'interfaccia definita sulla base delle necessità del livello di business logic: questo crea una dipendenza in qualche modo inversa rispetto alla filosofia dell'architettura, enfatizzando il fatto che la logica di dominio è il centro dell'applicativo.
+\end{itemize}
+
+Rifattorizzare un progetto basato su architettura three tier per renderlo compatibile con quella ports/adapters a volte potrebbe limitarsi alla riorganizzazione dei package, senza necessitare modifiche al codice: questo perché i componenti di un'architettura a livelli spesso hanno un equivalente in architettura esagonale (vedi figura ).
+
+
+Può capitare che data un'applicazione enterprise moderna
+Anche in questo caso si cerca di rendere il più possibile indipendente il nucleo di un'applicazione dalle tecnologie di contorno, come database, sistema di scambio messaggi ecc...
+
 
 Convertire un'applicazione service oriented realizzata a layers in una aderente all'architettura esagonale non è un'operazione complessa: se per esempio lo stack è di tipo 3-tier con una serie di servizi REST esposti che invocano internamente la logica di dominio ed uno strato di persistenza (es: JPA), la separazione tra core e adapters è immediata (vedi figura \ref{fig:hexagonal_3_tier}).
 
