@@ -11,7 +11,9 @@
 \BOOKMARK [1][-]{section.2.2}{Architettura a livelli}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.3}{Ports and adapters}{chapter.2}% 12
 \BOOKMARK [1][-]{section.2.4}{Logica di dominio}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.4.1}{Architettura del software}{section.2.4}% 14
-\BOOKMARK [0][-]{chapter.3}{Tecnologie}{}% 15
-\BOOKMARK [1][-]{subsection.3.0.1}{UI}{chapter.3}% 16
-\BOOKMARK [0][-]{subsection.3.0.1}{Bibliografia}{}% 17
+\BOOKMARK [2][-]{subsection.2.4.1}{Transaction script}{section.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4.2}{Domain model}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.3}{Architettura del software}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Tecnologie}{}% 17
+\BOOKMARK [1][-]{subsection.3.0.1}{UI}{chapter.3}% 18
+\BOOKMARK [0][-]{subsection.3.0.1}{Bibliografia}{}% 19

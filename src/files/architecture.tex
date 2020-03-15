@@ -83,17 +83,30 @@ I benefici di tale organizzazione diventano evidenti quando utilizzata all'inter
 
 \section{Logica di dominio}
 
-Quando si parla di realizzare la logica di dominio per un'applicazione enterprise vi sono numerosi approcci che si possono adottare: di seguito riportiamo due patterns notevoli\cite{enterprise_app} che si contrappongono rispetto a dove verrà posta la maggior parte della logica.
+Quando si parla di realizzare la logica di dominio per un'applicazione enterprise vi sono numerosi approcci che si possono adottare: di seguito riportiamo alcuni patterns  notevolu evidenziando quali sono i punti di forza e le debolezze di ognuno.
 
 \subsection{Transaction script}
-La logica di dominio è posta principalmente in oggetti esterni al modello vero e proprio: il vero centro dell'applicazione è dato dai componenti chiamati \textit{Business Service} in figura \ref{fig:layered-hexagonal}.
-L'idea è quella di avere entità più leggere, facilmente mappabili su un database.
-Questo approccio può essere utile quando si utilizza un framework come JPA per la persistenza: si ha infatti il vantaggio di ridurre drasticamente il numero di righe di codice di tale livello, accettando il compromesso di "sporcare" le classi di modello con alcune annotazioni accoppiate ad una tecnologia.
-Rendendo la separazione tra livelli o tra nucleo e porte più labile, questo approccio è adatto quando la logica di dominio non è particolarmente complessa e probabilmente non evolverà molto.
+Il pattern Transaction Script\cite{enterprise_app} prevede che la logica di dominio sia organizzata in base alle transazioni necessarie al sistema.
+Per ognuna di esse vi sarà un frammento di codice procedurale che si occupa di recuperare i dati necessari all'elaborazione, effettuare validazioni, modifiche ed aggiornare il database.
+Questo approccio è particolarmente adatto per casi d'uso in cui la logica è semplice: si tratta di organizzare correttamente il codice in moduli evitando duplicazione.
+In riferimento alla figura \ref{fig:layered-hexagonal}, i componenti \textit{Business Service} sono in effetti le classi \textit{Transaction Script}, prive di stato e ricchie di logica; i componenti \textit{Model} sono classi di modello che contengono lo stato vero e proprio, ma povere di comportamento (es. POJO in Java).\\
+Uno dei casi in cui questo approccio può essere utile, è quando si utilizza un framework come JPA per la persistenza: si ha infatti il vantaggio di ridurre drasticamente il numero di righe di codice di tale livello, accettando il compromesso di "sporcare" le classi di modello con alcune annotazioni accoppiate ad una tecnologia.
+Rendendo la separazione tra livelli (o tra nucleo e porte) più labile, questo pattern è adatto quando la logica di dominio non è particolarmente complessa e si prevede che non evolverà molto.
 
 \subsection{Domain model}
-La logica di dominio è contenuta quasi interamente all'interno degli oggetti del modello (\textit{Model} in figura \ref{fig:layered-hexagonal}).
-Questo approccio permette di mettere in
+Il pattern Domain Model\cite{enterprise_app}, al contrario di Transaction Script, organizza la logica di dominio all'interno degli oggetti del modello: \textit{Model} in figura \ref{fig:layered-hexagonal}.
+Le classi della categoria \textit{Business Service} sono presenti e presentano come in \textit{Transaction Script} un metodo per ogni richiesta/transazione, ma in questo caso la maggior parte del comportamento viene delegato.
+
+In un'applicazione Object Oriented, gli oggetti cercano di modellare dati e comportamenti caratteristici dell'area di business di cui tratta il software.
+Quando si ha a che fare con un modello ad oggetti ricco, forzarlo a rispecchiare semplicemente tabelle di un database vanifica i benefici della coesione tra dati ed operazioni forniti dalla OOP.
+Senza contare il fatto che non esiste sempre una corrispondenza esatta tra le associazioni possibili tra oggetti e quelle tra entità memorizzate su database (basti pensare al tema dell'Object Relational Mapping o ai Design Patterns\cite{design_patterns}).\\
+Utilizzare un vero e proprio modello ad oggetti permette di avere codice più comprensibile e manutenibile, preferendo numerose piccole classi ognuna con le proprie responsabilità.
+
+Quando si parla di architettura a microservizi anche quest'ultimo approccio può mostrare alcuni punti di debolezza.
+Può essere utile effettuare un ulteriore raffinamento, arrivando al concetto di Domain-driven design.
+
+\subsection{Domain-driven design}
+
 
 \subsection{Architettura del software}
 Il sistema è stato realizzato separando lo strato di UI da quello di business logic, realizzando secondo i principi dell'architettura \textit{ports/adapters}.\\

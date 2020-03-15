@@ -14,6 +14,11 @@ Martin Fowler.
 \newblock {\em Patterns of Enterprise Application Architecture}.
 \newblock Addison-Wesley Professional, 2002.
 
+\bibitem{design_patterns}
+Johnson~Vlissides Gamma, Helm.
+\newblock {\em Design Patterns}.
+\newblock Pearson, 2002.
+
 \bibitem{material_design}
 Google.
 \newblock Material design.
