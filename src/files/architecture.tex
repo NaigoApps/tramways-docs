@@ -48,7 +48,7 @@ Una delle alternative all'architettura organizzata a \textit{layers} è l'archit
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{img/hexagonal-component-diagram}
+	\includegraphics[width=\textwidth]{img/hexagonal-component-diagram}
 	\caption{Architettura ports and adapters}
 	\label{fig:hexagonal-architecture}
 \end{figure}
@@ -67,33 +67,33 @@ Partendo da un sistema costruito a livelli è possibile derivare l'equivalente i
 
 Rifattorizzare un progetto basato su architettura three tier per renderlo compatibile con quella ports/adapters a volte potrebbe limitarsi alla riorganizzazione dei package, senza necessitare modifiche al codice: questo perché i componenti di un'architettura a livelli spesso hanno un equivalente in architettura esagonale (vedi figura ).
 
-
 Può capitare che data un'applicazione enterprise moderna
 Anche in questo caso si cerca di rendere il più possibile indipendente il nucleo di un'applicazione dalle tecnologie di contorno, come database, sistema di scambio messaggi ecc...
 
-
-Convertire un'applicazione service oriented realizzata a layers in una aderente all'architettura esagonale non è un'operazione complessa: se per esempio lo stack è di tipo 3-tier con una serie di servizi REST esposti che invocano internamente la logica di dominio ed uno strato di persistenza (es: JPA), la separazione tra core e adapters è immediata (vedi figura \ref{fig:hexagonal_3_tier}).
+Convertire un'applicazione service oriented realizzata a layers in una aderente all'architettura esagonale non è un'operazione complessa: se per esempio lo stack è di tipo 3-tier con una serie di servizi REST esposti che invocano internamente la logica di dominio ed uno strato di persistenza (es: JPA), il mapping è immediato (vedi figura \ref{fig:layered-hexagonal}).
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{img/hexagonal_3_tier}
-	\caption{Conversione 3-tier - ports/adapters}
-	\label{fig:hexagonal_3_tier}
+	\includegraphics[width=\textwidth]{img/layered-hexagonal}
+	\caption{Confronto architettura a livelli e ports/adapters}
+	\label{fig:layered-hexagonal}
 \end{figure}
 
-I benefici di tale architettura diventano evidenti quando utilizzata all'interno di un software a microservizi, in quanto è possibile identificare con più chiarezza il compito del modulo e questo è testabile con maggior facilità.
-
+I benefici di tale organizzazione diventano evidenti quando utilizzata all'interno di un software a microservizi, in quanto si è obbligati a identificare con chiarezza quali sono i confini del servizio, favorendo manutenibilità e testabilità.
 
 \section{Logica di dominio}
 
-Quando si parla di realizzare la logica di dominio per un'applicazione enterprise vi sono numerosi approcci che si possono adottare: di seguito riportiamo due patterns notevoli\cite{enterprise_app}:\\
-\textbf{Transaction script:} Si pone la logica di dominio in oggetti esterni al modello: questo permette di avere entità più leggere, facilmente mappabili su un database.
+Quando si parla di realizzare la logica di dominio per un'applicazione enterprise vi sono numerosi approcci che si possono adottare: di seguito riportiamo due patterns notevoli\cite{enterprise_app} che si contrappongono rispetto a dove verrà posta la maggior parte della logica.
 
-\textbf{Domain model:} La logica di dominio è contenuta quasi interamente all'interno degli oggetti del modello: ciò permette di avere classi più ricche, anche se più difficilmente mappabili su di un database.
+\subsection{Transaction script}
+La logica di dominio è posta principalmente in oggetti esterni al modello vero e proprio: il vero centro dell'applicazione è dato dai componenti chiamati \textit{Business Service} in figura \ref{fig:layered-hexagonal}.
+L'idea è quella di avere entità più leggere, facilmente mappabili su un database.
+Questo approccio può essere utile quando si utilizza un framework come JPA per la persistenza: si ha infatti il vantaggio di ridurre drasticamente il numero di righe di codice di tale livello, accettando il compromesso di "sporcare" le classi di modello con alcune annotazioni accoppiate ad una tecnologia.
+Rendendo la separazione tra livelli o tra nucleo e porte più labile, questo approccio è adatto quando la logica di dominio non è particolarmente complessa e probabilmente non evolverà molto.
 
-Il primo approccio è adatto quando la complessità di ciò che si deve realizzare non è elevata, in quanto la separazione tra livelli diventa più labile, riducendo la manutenibilità del codice.
-
-
+\subsection{Domain model}
+La logica di dominio è contenuta quasi interamente all'interno degli oggetti del modello (\textit{Model} in figura \ref{fig:layered-hexagonal}).
+Questo approccio permette di mettere in
 
 \subsection{Architettura del software}
 Il sistema è stato realizzato separando lo strato di UI da quello di business logic, realizzando secondo i principi dell'architettura \textit{ports/adapters}.\\
