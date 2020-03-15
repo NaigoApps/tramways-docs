@@ -106,7 +106,23 @@ Quando si parla di architettura a microservizi anche quest'ultimo approccio può
 Può essere utile effettuare un ulteriore raffinamento, arrivando al concetto di Domain-driven design.
 
 \subsection{Domain-driven design}
+Questo raffinamento dello sviluppo orientato agli oggetti\cite{ddd}\cite{microservices} è stato pensato per applicazioni dotate di logica di business complessa.\\
 
+DDD prevede alcuni patterns utilizzabili come elementi base per costruire un modello di dominio.
+Di seguito i principali:
+\begin{itemize}
+	\item \textit{Entity:} Oggetto che ha un'identità persistente identificate da un ID. Sono le classi che in JPA sono annotate come \textit{@Entity}.
+	\item \textit{Value object:} Collezione di valori priva di un'identità persistente. Non possiedono un'ID, quindi due istanze diverse con lo stesso stato interno possono essere usate in modo intercambiabile.
+	\item \textit{Factory:} Oggetto o metodo che si occupa di creare oggetti complessi.
+	\item \textit{Repository:} Oggetto che permette l'accesso alle entità persistenti e nasconde i meccanismi di accesso al database.
+	\item \textit{Service:} Oggetto che implementa la logica di business che non è interna alle entities e ai value objects.
+\end{itemize}
+
+Un altro concetto importante in questo contesto è quello di \textit{Aggregato}.
+
+\subsection{Aggregati e microservizi}
+In un'architettura a microservizi ogni servizio deve necessariamente avere il proprio modello di dominio.
+Un tema interessante che verrà approfondito in questo paragrafo è quello del partizionamento di un modello di business in \textit{sottodomini} utilizzando il concetto di \textit{Business Context}.
 
 \subsection{Architettura del software}
 Il sistema è stato realizzato separando lo strato di UI da quello di business logic, realizzando secondo i principi dell'architettura \textit{ports/adapters}.\\

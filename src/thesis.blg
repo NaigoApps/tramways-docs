@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: thesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: files/introduction.aux
 A level-1 auxiliary file: files/application.aux
 A level-1 auxiliary file: files/architecture.aux
@@ -8,54 +6,13 @@ A level-1 auxiliary file: files/technologies.aux
 The style file: plain.bst
 Database file #1: files/biblio.bib
 Warning--entry type for "react" isn't style-file defined
---line 49 of file files/biblio.bib
+--line 57 of file files/biblio.bib
 Warning--entry type for "material_ui" isn't style-file defined
---line 55 of file files/biblio.bib
+--line 63 of file files/biblio.bib
 Warning--entry type for "material_design" isn't style-file defined
---line 61 of file files/biblio.bib
+--line 69 of file files/biblio.bib
 Too many commas in name 1 of "Gamma, Helm, Johnson, Vlissides" for entry design_patterns
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Gamma, Helm, Johnson, Vlissides" for entry design_patterns
 while executing---line 1090 of file plain.bst
-You've used 8 entries,
-            2118 wiz_defined-function locations,
-            536 strings with 4568 characters,
-and the built_in function-call counts, 1674 in all, are:
-= -- 143
-> -- 56
-< -- 0
-+ -- 24
-- -- 16
-* -- 57
-:= -- 292
-add.period$ -- 21
-call.type$ -- 8
-change.case$ -- 27
-chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 81
-empty$ -- 177
-format.name$ -- 16
-if$ -- 357
-int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 10
-newline$ -- 40
-num.names$ -- 16
-pop$ -- 64
-preamble$ -- 1
-purify$ -- 24
-quote$ -- 0
-skip$ -- 60
-stack$ -- 0
-substring$ -- 40
-swap$ -- 8
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 22
-warning$ -- 0
-while$ -- 16
-width$ -- 9
-write$ -- 73
 (There were 2 error messages)

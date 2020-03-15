@@ -37,4 +37,9 @@ Roberto~Grossi Pierluigi~Crescenzi, Giorgio~Gambosi.
 \newblock {\em Strutture di dati e algoritmi}.
 \newblock Pearson, 2006.
 
+\bibitem{microservices}
+Chris Richardson.
+\newblock {\em Microservices Patterns}.
+\newblock Manning, 2018.
+
 \end{thebibliography}
