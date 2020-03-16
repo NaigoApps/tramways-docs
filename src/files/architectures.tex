@@ -124,70 +124,26 @@ Un altro concetto importante in questo contesto è quello di \textit{Aggregato}.
 In un'architettura a microservizi ogni servizio deve necessariamente avere il proprio modello di dominio.
 Un tema interessante che verrà approfondito in questo paragrafo è quello del partizionamento di un modello di business in \textit{sottodomini} utilizzando il concetto di \textit{Business Context}.
 
-\subsection{Architettura del software}
-Il sistema è stato realizzato separando lo strato di UI da quello di business logic, realizzando secondo i principi dell'architettura \textit{ports/adapters}.\\
-In particolare sono esposti verso l'esterno (inbound) una serie di servizi REST necessari all'interazione, ed è utilizzato un servizio di persistenza relazionale (outbound) necessario alla memorizzazione di informazioni come il profilo degli utenti, i progetti e le analisi effettuate.
-In figura \ref{fig:architecture00} è mostrato lo schema generale.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{img/architecture00}
-	\caption{Architettura generale}
-	\label{fig:architecture00}
-\end{figure}
-
-I requisiti permettono di dividere naturalmente i servizi, le porte e gli adattatori in tre categorie:
+Un diagramma delle classi può non essere esaustivo quando si parla di confini di oggetti di business.
+Solitamente una transazione coinvolge un oggetto principale, ma può spaziare anche su altri elementi secondari.
+Un oggetto di business solitamente ha delle invarianti, ovvero condizioni che devono essere vere in ogni momento; in un'applicazione multiutente con entità persistite per esempio non è semplice studiare le interazioni con il database in modo da evitare inconsistenze.\\
+Modellare un modello di dominio utilizzando aggregati significa avere una serie di grafi di oggetti che possono essere trattati come un'unità.
+In questo modo le operazioni diventano più chiare: le operazioni di ricerca, aggiornamento e cancellazione per esempio coinvolgono un aggregato nella sua interezza, permettendo di evitare complicazioni come:
 \begin{itemize}
-	\item Gestione degli utenti;
-	\item Gestione delle configurazioni;
-	\item Gestione dei progetti;
+	\item Lazy loading: Identificare gli oggetti da caricare diventa immediato.
+	\item Eliminazione: Non esisteranno mai oggetti orfani sul database: l'eliminazione verrà sempre fatta in blocco.
+	\item Concorrenza: Quando si effettua un'operazione su un elemento di un aggregato è possibile utilizzare un locking sulla sua radice, evitando inconsistenze.
 \end{itemize}
 
-Un altro modulo piuttosto indipendente è quello relativo alla gestione delle analisi, ma essendo queste legate strettamente ad un progetto, saranno considerate parte dello stesso servizio.
+Per godere dei benefici portati dagli aggregati è necessario rispettare alcune regole apparentemente restrittive:
 
-Ognuno di questi moduli darà luogo ad un endpoint REST corrispondente ad uno o più casi d'uso, ad almeno un'entità principale e ad almeno una tabella su RDB.
-Di seguito verrà riportata la descrizione di ognuno di questi blocchi partendo dal centro del modello di dominio e spostandosi all'esterno.
+\begin{enumerate}
+	\item Le operazioni sull'aggregato devono partire dalla radice. Non dev'essere quindi possibile aggiornare le sue componenti direttamente. Una volta ottenuto l'oggetto principale tramite un repository basterà chiamare alcuni suoi metodi per effettuare le modifiche necessarie.
+	\item Gli aggregati devono riferirsi tra loro con una chiave primaria. Non devono quindi essere utilizzati oggetti di tipo riferimento quando si punta ad un aggregato diverso.
+	Questo è un approccio diverso da quello che solitamente si adotta in OOP, ma questo permette di disaccoppiare gli aggregati, rende più definiti i confini evitando modifiche non intenzionali e permette rende la separazione in servizi molto più agevole.
+	\'E inoltre più semplice scalare i database in maniera verticale, ovvero separandolo per aggregato.
+	\item Ogni transazione crea o aggiorna uno e un solo aggregato.
+	Nel caso un'operazione di business debba operare con più aggregati sarà quindi necessario creare più transazioni locali.
+\end{enumerate}
 
-\subsubsection{Gestione degli utenti}
-Il frammento di modello di dominio relativo alla gestione utenti è quello in figura \ref{fig:users_diagram}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{img/users_diagram}
-	\caption{Diagramma delle classi relative alla gestione degli utenti}
-	\label{fig:users_diagram}
-\end{figure}
-
-Dallo schema è possibile individuare quali siano le varie componenti associabili ai concetti dell'architettura esagonale:
-\begin{itemize}
-	\item UserService: Rappresenta una \textit{inbound port} che espone all'esterno le funzionalità relative ad un utente;
-	\item UserServiceImpl: Implementa l'interfaccia \textit{UserService}, ed è quindi un \textit{inbound adapter};
-	\item UserRepository: \'E una \textit{outbound port} necessaria per fornire alla logica di dominio le funzionalità di persistenza;
-	\item JPAUserRepository: Implementazione di \textit{UserRepository} e quindi \textit{outbound adapter}, dipendente da una tecnologia specifica (Database relazionali + JPA), fornisce il collegamento con un RDBMS.
-	\item UserRS: \'E un controller REST che espone verso il sottosistema UI i dati e le funzionalità di backend.
-\end{itemize}
-
-\subsubsection{Gestione delle configurazioni}
-Il frammento di modello di dominio relativo alla gestione delle configurazioni è quello in figura \ref{fig:configurations_diagram}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{img/configurations_diagram}
-	\caption{Diagramma delle classi relative alla gestione delle configurazioni}
-	\label{fig:configurations_diagram}
-\end{figure}
-
-La struttura generale è equivalente a quella della sezione utenti: si hanno due interfacce \textit{ConfigurationService} e \textit{ConfigurationRepository} corrispondenti alle porte \textit{inbound} e \textit{outbound}, con i relativi adattatori \textit{ConfigurationServiceImpl} e \textit{JPAConfigurationRepository}.\\
-Vi è sempre un controller REST per ricevere comandi dall'esterno del sistema, utilizzando in questo caso direttamente alcune entità del modello di dominio.
-
-\subsubsection{Gestione dei progetti}
-Il frammento di modello di dominio relativo alla gestione utenti è quello in figura \ref{fig:projects_diagram}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{img/projects_diagram}
-	\caption{Diagramma delle classi relative alla gestione dei progetti}
-	\label{fig:projects_diagram}
-\end{figure}
-
-Anche in questo caso vi sono le stesse porte e adattatori più il controller REST relativo.
+In un'applicazione monolitica questi limiti possono sembrare stringenti, ma ragionando in un'ottica \textit{microservices oriented} si noterà che molti problemi in questo modo risulteranno risolti.

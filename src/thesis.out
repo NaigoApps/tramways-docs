@@ -2,20 +2,32 @@
 \BOOKMARK [0][-]{chapter.1}{Applicazione}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Requisiti}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Casi d'uso}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Modellazione della rete stradale}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.3.1}{Il grafo dei trasporti}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.2}{Configurazione}{section.1.3}% 7
-\BOOKMARK [1][-]{section.1.4}{Schermate dell'applicazione}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Architetture}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Introduzione}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Architettura a livelli}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{Ports and adapters}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{Logica di dominio}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.4.1}{Transaction script}{section.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.4.2}{Domain model}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.3}{Domain-driven design}{section.2.4}% 16
-\BOOKMARK [2][-]{subsection.2.4.4}{Aggregati e microservizi}{section.2.4}% 17
-\BOOKMARK [2][-]{subsection.2.4.5}{Architettura del software}{section.2.4}% 18
-\BOOKMARK [0][-]{chapter.3}{Tecnologie}{}% 19
-\BOOKMARK [1][-]{subsection.3.0.1}{UI}{chapter.3}% 20
-\BOOKMARK [0][-]{subsection.3.0.1}{Bibliografia}{}% 21
+\BOOKMARK [1][-]{section.1.3}{Architettura del software}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Modellazione della rete stradale}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.4.1}{Il grafo dei trasporti}{section.1.4}% 7
+\BOOKMARK [2][-]{subsection.1.4.2}{Configurazione}{section.1.4}% 8
+\BOOKMARK [1][-]{section.1.5}{Schermate dell'applicazione}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Architetture}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduzione}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Architettura a livelli}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Ports and adapters}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Logica di dominio}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Transaction script}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Domain model}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.3}{Domain-driven design}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.4}{Aggregati e microservizi}{section.2.4}% 18
+\BOOKMARK [0][-]{chapter.3}{Microservizi}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Scalabilit\340}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.1.1}{The Scale Cube}{section.3.1}% 21
+\BOOKMARK [1][-]{section.3.2}{Partizionamento in microservizi}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Saga}{section.3.2}% 23
+\BOOKMARK [1][-]{section.3.3}{Caratteristiche di un microservizio}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Tecnologie}{}% 25
+\BOOKMARK [1][-]{subsection.4.0.1}{UI}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Docker}{}% 27
+\BOOKMARK [0][-]{chapter.6}{Servizi di cloud computing}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Software as a service}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{Platform as a service}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.3}{Infrastructure as a service}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Conclusioni}{}% 32
+\BOOKMARK [0][-]{chapter.7}{Bibliografia}{}% 33

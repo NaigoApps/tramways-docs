@@ -3,6 +3,10 @@ A level-1 auxiliary file: files/introduction.aux
 A level-1 auxiliary file: files/application.aux
 A level-1 auxiliary file: files/architecture.aux
 A level-1 auxiliary file: files/technologies.aux
+A level-1 auxiliary file: files/microservices.aux
+A level-1 auxiliary file: files/docker.aux
+A level-1 auxiliary file: files/cloud_services.aux
+A level-1 auxiliary file: files/conclusions.aux
 The style file: plain.bst
 Database file #1: files/biblio.bib
 Warning--entry type for "react" isn't style-file defined

@@ -4,23 +4,38 @@
 \contentsline {chapter}{\numberline {1}Applicazione}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Requisiti}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Casi d'uso}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Modellazione della rete stradale}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Il grafo dei trasporti}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Configurazione}{8}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Schermate dell'applicazione}{9}{section.1.4}
-\contentsline {chapter}{\numberline {2}Architetture}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduzione}{12}{section.2.1}
-\contentsline {section}{\numberline {2.2}Architettura a livelli}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Ports and adapters}{15}{section.2.3}
-\contentsline {section}{\numberline {2.4}Logica di dominio}{17}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Transaction script}{17}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Domain model}{18}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Domain-driven design}{19}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Aggregati e microservizi}{20}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Architettura del software}{20}{subsection.2.4.5}
-\contentsline {subsubsection}{Gestione degli utenti}{21}{section*.21}
-\contentsline {subsubsection}{Gestione delle configurazioni}{22}{section*.23}
-\contentsline {subsubsection}{Gestione dei progetti}{23}{section*.25}
-\contentsline {chapter}{\numberline {3}Tecnologie}{25}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}UI}{25}{subsection.3.0.1}
-\contentsline {chapter}{Bibliografia}{26}{subsection.3.0.1}
+\contentsline {section}{\numberline {1.3}Architettura del software}{5}{section.1.3}
+\contentsline {subsubsection}{Gestione degli utenti}{6}{section*.8}
+\contentsline {subsubsection}{Gestione delle configurazioni}{7}{section*.10}
+\contentsline {subsubsection}{Gestione dei progetti}{8}{section*.12}
+\contentsline {section}{\numberline {1.4}Modellazione della rete stradale}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Il grafo dei trasporti}{9}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Configurazione}{12}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Schermate dell'applicazione}{13}{section.1.5}
+\contentsline {chapter}{\numberline {2}Architetture}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduzione}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Architettura a livelli}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}Ports and adapters}{19}{section.2.3}
+\contentsline {section}{\numberline {2.4}Logica di dominio}{21}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Transaction script}{21}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Domain model}{22}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Domain-driven design}{23}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Aggregati e microservizi}{24}{subsection.2.4.4}
+\contentsline {chapter}{\numberline {3}Microservizi}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Scalabilit\IeC {\`a}}{26}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}The Scale Cube}{27}{subsection.3.1.1}
+\contentsline {subsubsection}{Asse X}{27}{section*.28}
+\contentsline {subsubsection}{Asse Z}{28}{section*.29}
+\contentsline {subsubsection}{Asse Y}{28}{section*.30}
+\contentsline {section}{\numberline {3.2}Partizionamento in microservizi}{29}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Saga}{29}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Caratteristiche di un microservizio}{30}{section.3.3}
+\contentsline {chapter}{\numberline {4}Tecnologie}{31}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}UI}{31}{subsection.4.0.1}
+\contentsline {chapter}{\numberline {5}Docker}{32}{chapter.5}
+\contentsline {chapter}{\numberline {6}Servizi di cloud computing}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Software as a service}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Platform as a service}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Infrastructure as a service}{34}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusioni}{35}{chapter.7}
+\contentsline {chapter}{Bibliografia}{36}{chapter.7}

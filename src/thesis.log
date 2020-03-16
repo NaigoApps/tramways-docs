@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.3.30)  15 MAR 2020 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.3.30)  16 MAR 2020 01:06
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -517,7 +517,8 @@ Package hyperref Info: Option `plainpages' set `false' on input line 61.
 Package hyperref Info: Option `breaklinks' set `true' on input line 61.
 Package hyperref Info: Option `colorlinks' set `false' on input line 61.
  (thesis.aux (files/introduction.aux) (files/application.aux)
-(files/architecture.aux) (files/technologies.aux))
+(files/architectures.aux) (files/microservices.aux) (files/technologies.aux)
+(files/docker.aux) (files/cloud_services.aux) (files/conclusions.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -590,7 +591,7 @@ LaTeX Info: Redefining \nameref on input line 63.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<./img/stemma.pdf, id=86, 1622.06pt x 1673.45195pt>
+<./img/stemma.pdf, id=134, 1622.06pt x 1673.45195pt>
 File: ./img/stemma.pdf Graphic file (type pdf)
 <use ./img/stemma.pdf>
 Package pdftex.def Info: ./img/stemma.pdf  used on input line 69.
@@ -621,7 +622,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 ...{\numberline {3}Tecnologie}{25}{chapter.3}
+l.24 ...numberline {3}Microservizi}{26}{chapter.3}
                                                    [1
 
 ])
@@ -659,12 +660,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 ] [2]
-<img/UserUC.png, id=150, 484.81125pt x 301.125pt>
+<img/UserUC.png, id=210, 484.81125pt x 301.125pt>
 File: img/UserUC.png Graphic file (type png)
 <use img/UserUC.png>
 Package pdftex.def Info: img/UserUC.png  used on input line 44.
 (pdftex.def)             Requested size: 242.40503pt x 150.56212pt.
-<img/AdminUC.png, id=152, 361.35pt x 109.40875pt>
+<img/AdminUC.png, id=212, 361.35pt x 109.40875pt>
 File: img/AdminUC.png Graphic file (type png)
 <use img/AdminUC.png>
 Package pdftex.def Info: img/AdminUC.png  used on input line 56.
@@ -673,7 +674,7 @@ Package pdftex.def Info: img/AdminUC.png  used on input line 56.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/ExpertUC.png, id=154, 381.425pt x 103.38625pt>
+<img/ExpertUC.png, id=214, 381.425pt x 103.38625pt>
 File: img/ExpertUC.png Graphic file (type png)
 <use img/ExpertUC.png>
 Package pdftex.def Info: img/ExpertUC.png  used on input line 66.
@@ -682,210 +683,257 @@ Package pdftex.def Info: img/ExpertUC.png  used on input line 66.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./img/UserUC.png (PNG copy)>]
-<img/conceptual00.png, id=164, 281.05pt x 220.825pt>
+<img/conceptual00.png, id=224, 281.05pt x 220.825pt>
 File: img/conceptual00.png Graphic file (type png)
 <use img/conceptual00.png>
 Package pdftex.def Info: img/conceptual00.png  used on input line 80.
 (pdftex.def)             Requested size: 140.52464pt x 110.41222pt.
  [4 <./img/AdminUC.png (PNG copy)> <./img/ExpertUC.png (PNG copy)> <./img/conce
 ptual00.png (PNG copy)>]
-<img/model00.png, id=172, 288.07625pt x 221.82875pt>
-File: img/model00.png Graphic file (type png)
-<use img/model00.png>
-Package pdftex.def Info: img/model00.png  used on input line 101.
-(pdftex.def)             Requested size: 144.03777pt x 110.9141pt.
- [5 <./img/model00.png (PNG copy)>]
-<img/model01.png, id=185, 365.365pt x 231.86626pt>
-File: img/model01.png Graphic file (type png)
-<use img/model01.png>
-Package pdftex.def Info: img/model01.png  used on input line 119.
-(pdftex.def)             Requested size: 182.68205pt x 115.93283pt.
-<img/graph00.png, id=186, 806.01125pt x 304.13625pt>
-File: img/graph00.png Graphic file (type png)
-<use img/graph00.png>
-Package pdftex.def Info: img/graph00.png  used on input line 126.
-(pdftex.def)             Requested size: 403.00464pt x 152.06775pt.
-
-Overfull \hbox (13.00464pt too wide) in paragraph at lines 126--127
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6 <./img/model01.png (PNG copy)>]
-<img/model02.png, id=197, 623.32875pt x 411.5375pt>
-File: img/model02.png Graphic file (type png)
-<use img/model02.png>
-Package pdftex.def Info: img/model02.png  used on input line 144.
-(pdftex.def)             Requested size: 311.6636pt x 205.76825pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./img/graph00.png>]
-<img/model03.png, id=205, 666.49pt x 402.50375pt>
-File: img/model03.png Graphic file (type png)
-<use img/model03.png>
-Package pdftex.def Info: img/model03.png  used on input line 158.
-(pdftex.def)             Requested size: 333.24419pt x 201.25137pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/screen00.png, id=206, 1028.34187pt x 244.66406pt>
-File: img/screen00.png Graphic file (type png)
-<use img/screen00.png>
-Package pdftex.def Info: img/screen00.png  used on input line 172.
-(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
-[8 <./img/model02.png (PNG copy)>]
-<img/screen01.png, id=212, 1028.34187pt x 244.66406pt>
-File: img/screen01.png Graphic file (type png)
-<use img/screen01.png>
-Package pdftex.def Info: img/screen01.png  used on input line 179.
-(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/screen02.png, id=213, 1028.34187pt x 244.66406pt>
-File: img/screen02.png Graphic file (type png)
-<use img/screen02.png>
-Package pdftex.def Info: img/screen02.png  used on input line 186.
-(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/screen03.png, id=214, 1028.34187pt x 386.94562pt>
-File: img/screen03.png Graphic file (type png)
-<use img/screen03.png>
-Package pdftex.def Info: img/screen03.png  used on input line 193.
-(pdftex.def)             Requested size: 390.0pt x 146.75154pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/screen04.png, id=215, 1028.34187pt x 301.8778pt>
-File: img/screen04.png Graphic file (type png)
-<use img/screen04.png>
-Package pdftex.def Info: img/screen04.png  used on input line 201.
-(pdftex.def)             Requested size: 390.0pt x 114.48904pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [9 <./img/model03.png (PNG copy)> <./img/screen00.png (PNG copy)>] [10 <./img
-/screen01.png (PNG copy)> <./img/screen02.png (PNG copy)> <./img/screen03.png (
-PNG copy)>] [11 <./img/screen04.png (PNG copy)>]
-\openout2 = `files/architecture.aux'.
-
- (files/architecture.tex
-Capitolo 2.
-[12
-
-
-
-] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
- []
-
-<img/layered-architecture.pdf, id=247, 463.7325pt x 45.2892pt>
-File: img/layered-architecture.pdf Graphic file (type pdf)
-<use img/layered-architecture.pdf>
-Package pdftex.def Info: img/layered-architecture.pdf  used on input line 36.
-(pdftex.def)             Requested size: 390.0pt x 38.08896pt.
-<img/hexagonal-component-diagram.pdf, id=249, 348.34138pt x 246.9225pt>
-File: img/hexagonal-component-diagram.pdf Graphic file (type pdf)
-<use img/hexagonal-component-diagram.pdf>
-Package pdftex.def Info: img/hexagonal-component-diagram.pdf  used on input lin
-e 51.
-(pdftex.def)             Requested size: 390.0pt x 276.47217pt.
-[14 <./img/layered-architecture.pdf>] [15 <./img/hexagonal-component-diagram.pd
-f>] [16]
-<img/layered-hexagonal.pdf, id=294, 463.7325pt x 160.6803pt>
-File: img/layered-hexagonal.pdf Graphic file (type pdf)
-<use img/layered-hexagonal.pdf>
-Package pdftex.def Info: img/layered-hexagonal.pdf  used on input line 77.
-(pdftex.def)             Requested size: 390.0pt x 135.1348pt.
- [17 <./img/layered-hexagonal.pdf>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
-[19]
-<img/architecture00.png, id=333, 986.68625pt x 487.8225pt>
+<img/architecture00.png, id=231, 986.68625pt x 487.8225pt>
 File: img/architecture00.png Graphic file (type png)
 <use img/architecture00.png>
-Package pdftex.def Info: img/architecture00.png  used on input line 134.
+Package pdftex.def Info: img/architecture00.png  used on input line 92.
 (pdftex.def)             Requested size: 390.0pt x 192.81804pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20]
-<img/users_diagram.png, id=340, 526.96875pt x 361.35pt>
+ [5 <./img/architecture00.png>]
+<img/users_diagram.png, id=240, 526.96875pt x 361.35pt>
 File: img/users_diagram.png Graphic file (type png)
 <use img/users_diagram.png>
-Package pdftex.def Info: img/users_diagram.png  used on input line 156.
+Package pdftex.def Info: img/users_diagram.png  used on input line 114.
 (pdftex.def)             Requested size: 390.0pt x 267.43892pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21 <./img/architecture00.png>]
-<img/configurations_diagram.png, id=350, 703.62875pt x 522.95375pt>
+ [6 <./img/users_diagram.png (PNG copy)>]
+<img/configurations_diagram.png, id=248, 703.62875pt x 522.95375pt>
 File: img/configurations_diagram.png Graphic file (type png)
 <use img/configurations_diagram.png>
-Package pdftex.def Info: img/configurations_diagram.png  used on input line 175
+Package pdftex.def Info: img/configurations_diagram.png  used on input line 133
 .
 (pdftex.def)             Requested size: 390.0pt x 289.85176pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22 <./img/users_diagram.png (PNG copy)>]
-<img/projects_diagram.png, id=358, 762.85pt x 323.2075pt>
+<img/projects_diagram.png, id=250, 762.85pt x 323.2075pt>
 File: img/projects_diagram.png Graphic file (type png)
 <use img/projects_diagram.png>
-Package pdftex.def Info: img/projects_diagram.png  used on input line 188.
+Package pdftex.def Info: img/projects_diagram.png  used on input line 146.
 (pdftex.def)             Requested size: 390.0pt x 165.23311pt.
+[7]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./img/configurations_diagram.png (PNG copy)>]
+<img/model00.png, id=265, 288.07625pt x 221.82875pt>
+File: img/model00.png Graphic file (type png)
+<use img/model00.png>
+Package pdftex.def Info: img/model00.png  used on input line 170.
+(pdftex.def)             Requested size: 144.03777pt x 110.9141pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [23 <./img/configurations_diagram.png (PNG copy)>] [24 <./img/projects_diagra
-m.png (PNG copy)>]
+[9 <./img/projects_diagram.png (PNG copy)>]
+<img/model01.png, id=281, 365.365pt x 231.86626pt>
+File: img/model01.png Graphic file (type png)
+<use img/model01.png>
+Package pdftex.def Info: img/model01.png  used on input line 188.
+(pdftex.def)             Requested size: 182.68205pt x 115.93283pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/graph00.png, id=282, 806.01125pt x 304.13625pt>
+File: img/graph00.png Graphic file (type png)
+<use img/graph00.png>
+Package pdftex.def Info: img/graph00.png  used on input line 195.
+(pdftex.def)             Requested size: 403.00464pt x 152.06775pt.
+
+Overfull \hbox (13.00464pt too wide) in paragraph at lines 195--196
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./img/model00.png (PNG copy)>]
+<img/model02.png, id=290, 623.32875pt x 411.5375pt>
+File: img/model02.png Graphic file (type png)
+<use img/model02.png>
+Package pdftex.def Info: img/model02.png  used on input line 213.
+(pdftex.def)             Requested size: 311.6636pt x 205.76825pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./img/model01.png (PNG copy)> <./img/graph00.png>]
+<img/model03.png, id=298, 666.49pt x 402.50375pt>
+File: img/model03.png Graphic file (type png)
+<use img/model03.png>
+Package pdftex.def Info: img/model03.png  used on input line 227.
+(pdftex.def)             Requested size: 333.24419pt x 201.25137pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/screen00.png, id=299, 1028.34187pt x 244.66406pt>
+File: img/screen00.png Graphic file (type png)
+<use img/screen00.png>
+Package pdftex.def Info: img/screen00.png  used on input line 241.
+(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
+[12 <./img/model02.png (PNG copy)>]
+<img/screen01.png, id=305, 1028.34187pt x 244.66406pt>
+File: img/screen01.png Graphic file (type png)
+<use img/screen01.png>
+Package pdftex.def Info: img/screen01.png  used on input line 248.
+(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/screen02.png, id=306, 1028.34187pt x 244.66406pt>
+File: img/screen02.png Graphic file (type png)
+<use img/screen02.png>
+Package pdftex.def Info: img/screen02.png  used on input line 255.
+(pdftex.def)             Requested size: 390.0pt x 92.79037pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/screen03.png, id=307, 1028.34187pt x 386.94562pt>
+File: img/screen03.png Graphic file (type png)
+<use img/screen03.png>
+Package pdftex.def Info: img/screen03.png  used on input line 262.
+(pdftex.def)             Requested size: 390.0pt x 146.75154pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/screen04.png, id=308, 1028.34187pt x 301.8778pt>
+File: img/screen04.png Graphic file (type png)
+<use img/screen04.png>
+Package pdftex.def Info: img/screen04.png  used on input line 270.
+(pdftex.def)             Requested size: 390.0pt x 114.48904pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [13 <./img/model03.png (PNG copy)> <./img/screen00.png (PNG copy)>] [14 <./im
+g/screen01.png (PNG copy)> <./img/screen02.png (PNG copy)> <./img/screen03.png 
+(PNG copy)>] [15 <./img/screen04.png (PNG copy)>]
+\openout2 = `files/architectures.aux'.
+
+ (files/architectures.tex
+Capitolo 2.
+[16
+
+
+
+] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+<img/layered-architecture.pdf, id=340, 463.7325pt x 45.2892pt>
+File: img/layered-architecture.pdf Graphic file (type pdf)
+<use img/layered-architecture.pdf>
+Package pdftex.def Info: img/layered-architecture.pdf  used on input line 36.
+(pdftex.def)             Requested size: 390.0pt x 38.08896pt.
+<img/hexagonal-component-diagram.pdf, id=342, 348.34138pt x 246.9225pt>
+File: img/hexagonal-component-diagram.pdf Graphic file (type pdf)
+<use img/hexagonal-component-diagram.pdf>
+Package pdftex.def Info: img/hexagonal-component-diagram.pdf  used on input lin
+e 51.
+(pdftex.def)             Requested size: 390.0pt x 276.47217pt.
+[18 <./img/layered-architecture.pdf>] [19 <./img/hexagonal-component-diagram.pd
+f>] [20]
+<img/layered-hexagonal.pdf, id=386, 463.7325pt x 160.6803pt>
+File: img/layered-hexagonal.pdf Graphic file (type pdf)
+<use img/layered-hexagonal.pdf>
+Package pdftex.def Info: img/layered-hexagonal.pdf  used on input line 77.
+(pdftex.def)             Requested size: 390.0pt x 135.1348pt.
+ [21 <./img/layered-hexagonal.pdf>] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[23] [24]) [25]
+\openout2 = `files/microservices.aux'.
+
+ (files/microservices.tex
+Capitolo 3.
+[26
+
+
+
+]
+<img/scale_cube.png, id=442, 615.29875pt x 458.71375pt>
+File: img/scale_cube.png Graphic file (type png)
+<use img/scale_cube.png>
+Package pdftex.def Info: img/scale_cube.png  used on input line 17.
+(pdftex.def)             Requested size: 307.64862pt x 229.35631pt.
+ [27 <./img/scale_cube.png>] [28]) [29] [30]
 \openout2 = `files/technologies.aux'.
 
  (files/technologies.tex
-Capitolo 3.
+Capitolo 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-) [25
+) [31
 
 
 
-] (thesis.bbl)
+]
+\openout2 = `files/docker.aux'.
+
+ (files/docker.tex
+Capitolo 5.
+) [32
+
+
+
+]
+\openout2 = `files/cloud_services.aux'.
+
+ (files/cloud_services.tex
+Capitolo 6.
+[33
+
+
+
+]) [34]
+\openout2 = `files/conclusions.aux'.
+
+ (files/conclusions.tex
+Capitolo 7.
+) [35
+
+
+
+] (thesis.bbl
+Underfull \hbox (badness 1552) in paragraph at lines 13--16
+[]\T1/cmr/m/n/12 Martin Fo-w-ler.  \T1/cmr/m/it/12 Pat-terns of En-ter-pri-se A
+p-pli-ca-tion Ar-chi-tec-tu-re\T1/cmr/m/n/12 .
+ []
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
- [26
+ [36
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
- (thesis.aux (files/introduction.aux)
-(files/application.aux) (files/architecture.aux) (files/technologies.aux))
+ (thesis.aux (files/introduction.aux) (files/application.aux)
+(files/architectures.aux) (files/microservices.aux) (files/technologies.aux)
+(files/docker.aux) (files/cloud_services.aux) (files/conclusions.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8322DC69D6367670635762E23F099E25;1348.
+(rerunfilecheck)             Checksum: A7DA5AFD8D868CEFABE3CFF782D3D314;2102.
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 11293 strings out of 492970
- 170173 string characters out of 3125706
- 283235 words of memory out of 3000000
- 14856 multiletter control sequences out of 15000+200000
+ 11377 strings out of 492970
+ 172021 string characters out of 3125706
+ 286344 words of memory out of 3000000
+ 14881 multiletter control sequences out of 15000+200000
  20030 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,8n,42p,805b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -910,9 +958,9 @@ enzo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><C:/Users/Lorenzo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr8.pfb><C:/Users/Lorenzo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (30 pages, 1005434 bytes).
+Output written on thesis.pdf (40 pages, 1096732 bytes).
 PDF statistics:
- 794 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 961 PDF objects out of 1000 (max. 8388607)
+ 114 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

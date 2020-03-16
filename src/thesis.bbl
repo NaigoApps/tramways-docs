@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ddd}
 Eric Evans.
@@ -22,6 +22,11 @@ Johnson~Vlissides Gamma, Helm.
 \bibitem{material_design}
 Google.
 \newblock Material design.
+
+\bibitem{the_art_of_scalability}
+Michael T.~Fisher Martin L.~Abbott.
+\newblock {\em The art of scalability}.
+\newblock Addison-Wesley Professional, 2015.
 
 \bibitem{material_ui}
 Material-UI.
