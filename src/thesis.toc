@@ -21,21 +21,22 @@
 \contentsline {subsection}{\numberline {2.4.2}Domain model}{22}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Domain-driven design}{23}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Aggregati e microservizi}{24}{subsection.2.4.4}
-\contentsline {chapter}{\numberline {3}Microservizi}{26}{chapter.3}
+\contentsline {chapter}{\numberline {3}Architettura a Microservizi}{26}{chapter.3}
 \contentsline {section}{\numberline {3.1}Scalabilit\IeC {\`a}}{26}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}The Scale Cube}{27}{subsection.3.1.1}
 \contentsline {subsubsection}{Asse X}{27}{section*.28}
 \contentsline {subsubsection}{Asse Z}{28}{section*.29}
 \contentsline {subsubsection}{Asse Y}{28}{section*.30}
 \contentsline {section}{\numberline {3.2}Partizionamento in microservizi}{29}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Saga}{29}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Caratteristiche di un microservizio}{30}{section.3.3}
-\contentsline {chapter}{\numberline {4}Tecnologie}{31}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}UI}{31}{subsection.4.0.1}
-\contentsline {chapter}{\numberline {5}Docker}{32}{chapter.5}
-\contentsline {chapter}{\numberline {6}Servizi di cloud computing}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Software as a service}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Platform as a service}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Infrastructure as a service}{34}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclusioni}{35}{chapter.7}
-\contentsline {chapter}{Bibliografia}{36}{chapter.7}
+\contentsline {section}{\numberline {3.3}Scambio di messaggi}{30}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gestione delle transazioni}{30}{section.3.4}
+\contentsline {section}{\numberline {3.5}Caratteristiche di un microservizio}{33}{section.3.5}
+\contentsline {chapter}{\numberline {4}Tecnologie}{36}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}UI}{36}{subsection.4.0.1}
+\contentsline {chapter}{\numberline {5}Docker}{37}{chapter.5}
+\contentsline {chapter}{\numberline {6}Servizi di cloud computing}{38}{chapter.6}
+\contentsline {section}{\numberline {6.1}Software as a service}{38}{section.6.1}
+\contentsline {section}{\numberline {6.2}Platform as a service}{38}{section.6.2}
+\contentsline {section}{\numberline {6.3}Infrastructure as a service}{39}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusioni}{40}{chapter.7}
+\contentsline {chapter}{Bibliografia}{41}{chapter.7}

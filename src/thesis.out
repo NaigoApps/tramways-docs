@@ -16,18 +16,19 @@
 \BOOKMARK [2][-]{subsection.2.4.2}{Domain model}{section.2.4}% 16
 \BOOKMARK [2][-]{subsection.2.4.3}{Domain-driven design}{section.2.4}% 17
 \BOOKMARK [2][-]{subsection.2.4.4}{Aggregati e microservizi}{section.2.4}% 18
-\BOOKMARK [0][-]{chapter.3}{Microservizi}{}% 19
+\BOOKMARK [0][-]{chapter.3}{Architettura a Microservizi}{}% 19
 \BOOKMARK [1][-]{section.3.1}{Scalabilit\340}{chapter.3}% 20
 \BOOKMARK [2][-]{subsection.3.1.1}{The Scale Cube}{section.3.1}% 21
 \BOOKMARK [1][-]{section.3.2}{Partizionamento in microservizi}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Saga}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{Caratteristiche di un microservizio}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Tecnologie}{}% 25
-\BOOKMARK [1][-]{subsection.4.0.1}{UI}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Docker}{}% 27
-\BOOKMARK [0][-]{chapter.6}{Servizi di cloud computing}{}% 28
-\BOOKMARK [1][-]{section.6.1}{Software as a service}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.2}{Platform as a service}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.3}{Infrastructure as a service}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter.7}{Conclusioni}{}% 32
-\BOOKMARK [0][-]{chapter.7}{Bibliografia}{}% 33
+\BOOKMARK [1][-]{section.3.3}{Scambio di messaggi}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Gestione delle transazioni}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{Caratteristiche di un microservizio}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{Tecnologie}{}% 26
+\BOOKMARK [1][-]{subsection.4.0.1}{UI}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Docker}{}% 28
+\BOOKMARK [0][-]{chapter.6}{Servizi di cloud computing}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Software as a service}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Platform as a service}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{Infrastructure as a service}{chapter.6}% 32
+\BOOKMARK [0][-]{chapter.7}{Conclusioni}{}% 33
+\BOOKMARK [0][-]{chapter.7}{Bibliografia}{}% 34
