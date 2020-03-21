@@ -65,8 +65,23 @@ Vi sono naturalmente anche svantaggi nell'adottare questo tipo di architettura, 
 	\item Aggiungere funzionalità che necessitano l'aggiornamento di più servizi è più complesso: Sarà necessario un piano di aggiornamento che tenga conto delle dipendenze tra moduli.
 \end{itemize}
 
+
+//TODO CONTINUARE CON PARTIZIONAMENTO
+
 \section{Scambio di messaggi}
-//ASINCRONO VS SINCRONO
+In un'applicazione monolitica lo scambio di messaggi tra processi è solitamente un tema secondario: i moduli interagiscono tra loro con semplici chiamate a funzione, a meno di eventuali servizi esposti verso l'esterno (es. REST).
+Quando si ha a che fare con un'architettura a microservizi invece la \textit{Inter Process Communication} (IPC) è all'ordine del giorno.\\
+Definire e mantenere correttamente una API è in questo caso più complicato: a differenza di quanto accade durante per esempio la definizione di un'interfaccia, in caso di incompatibilità non si avranno errori di compilazione ma fallimenti a runtime quando il servizio verrà effettivamente invocato.\\
+Importante quindi (anche in un'applicazione monolitica service oriented) è definire in anticipo e in modo dettagliato la API che il software fornirà.
+Di seguito saranno esposti alcuni possibili approcci, ma in generale la tendenza è quella di utilizzare protocolli asincroni per le comunicazioni tra servizi in modo da ottenere maggior disaccoppiamento, e protocolli sincroni per interazioni con sistemi esterni.\\
+Per quanto riguarda invece il formato dei dati da scambiare 
+
+\subsection{Protocolli sincroni}
+In questo caso il componente che richiede il servizio invia un messaggio al destinatario e si mette in attesa della risposta.
+
+\subsection{Protocolli asincroni}
+
+
 
 \section{Gestione delle transazioni}
 Una transazione di business in un sistema monolitico corrisponde spesso con una transazione locale che inizia all'arrivo della richiesta e termina all'invio della risposta.\\
